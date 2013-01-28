@@ -1,20 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Czat</title>
+    <title>Lista zadan</title>
     <link rel="stylesheet" href="style.css">
     <script src="jquery.min.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="skrypt.js"></script>
   </head>  
   <body>
-    <h1>Czat</h1>
-    <div id="log">
-      <ul>
-      </ul>
+    <div id="login">
+      <input id="userLogin" type="text">
+      <button id="zaloguj">Zaloguj</button>
     </div>
-    <div id="console">
-      <input type="text" id="entry">
+    <div id="addTask">
+	  <table>
+	  <tr>
+	  <td><label for="nazwa">Zadanie</label></td>
+      <td><input type="text" name="nazwa" id="nazwa" ></td>
+	  </tr>
+	  <tr>
+	  <td><label for="user">Adresat</label></td>
+      <td><input type="text" name="user" id="user" ></td>
+	  </tr>
+	  <tr>
+	  <td><label for="termin">Termin</label></td>
+      <td><input type="date" name="termin" id="termin" ></td>
+	  </tr>
+	  </table>
+      <button id="add">Dodaj</button><br><br>
+    </div>
+    <div id="tasks">
+      
+    <ul id="active">
+      </ul>
+      
+    <ul id="history">
+      </ul>
     </div>
   </body>
 </html>

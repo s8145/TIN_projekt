@@ -1,18 +1,57 @@
 body {
-  background-color: #eeeeee;
+  background-color: #F0F1F3;
 }
-#entry {
-  background-color: black;
-  color: white;
-  width: 100%;
+#active{
+  float: left;
+  width: 30%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
 }
-#console {
-  position: fixed;
-  bottom: 20px;
-  width: 98%;
-  font-size: 14px;
+#active li{
+  display: block;
+  width: 80%;
+  border: 3px solid;
+  margin-bottom: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  cursor: crosshair;
+  background: white;
 }
-.uname {
-  font-weight: bold;
-  color: green;
+
+#active li.arv{
+  border: 3px solid red;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+}
+
+#active li p span.user{
+  color: red;
+}
+
+#history{
+  float: right;
+  width: 30%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#history li{
+  list-style: none;
+  display: block;
+  width: 80%;
+  border: 3px solid green;
+  margin-bottom: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  cursor: crosshair;
+  background: white;
 }
